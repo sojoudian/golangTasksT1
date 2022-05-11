@@ -7,7 +7,7 @@ import (
 )
 
 func userPost(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content/Type", "application/json")
+	w.Header().Set("Content-Type", "application/json")
 	jsonDecoder := json.NewDecoder(r.Body)
 
 	newUser := &User{}
